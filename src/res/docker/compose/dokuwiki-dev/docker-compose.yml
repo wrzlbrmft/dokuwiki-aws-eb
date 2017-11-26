@@ -8,6 +8,6 @@ services:
      - "8080:80"
     volumes:
      - "../../../../web:/var/www/src/web"
-     - "data:/var/www/src/data"
+     - "data:/var/www/src/web/dokuwiki/data"
 volumes:
   data:
