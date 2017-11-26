@@ -1,4 +1,5 @@
 .idea/
 /log/
 /web
-/src/web/data/
+/src/web/data/**
+!/src/web/data/.keep
