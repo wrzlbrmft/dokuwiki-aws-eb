@@ -1,4 +1,4 @@
-FROM php:7.1-apache
+FROM php:7.2-apache
 EXPOSE 8080:80
 RUN a2enmod rewrite
 RUN apt-get update \
@@ -6,7 +6,7 @@ RUN apt-get update \
 		libfreetype6-dev \
 		libgif-dev \
 		libjpeg62-turbo-dev \
-		libpng12-dev \
+		libpng-dev \
 	&& docker-php-ext-configure gd \
 		--with-jpeg-dir=/usr/include \
 		--with-png-dir=/usr/include \
